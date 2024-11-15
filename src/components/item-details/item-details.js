@@ -108,7 +108,7 @@ const ItemDetailsView = ({ item, image, context }) => {
         <>
             <img className="item-image" alt={`~-~${type}~-~`} src={image} />
             <div className="card-body">
-                <h3>{name}</h3>
+                <h4>{name}</h4>
                 <ul className="list-group list-group-flush">
                     {React.Children.map(context, (child) =>
                         React.cloneElement(child, { item })
